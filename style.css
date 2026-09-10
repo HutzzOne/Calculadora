@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 5px 0px;
+  margin-top: -220px;
+  margin-left: 38%;
+    
+}      
+h1{
+    width: fit-content;
+    color: #008cf0;
+    background-color: #00253E;
+    text-align: left;
+    margin-top: 0;
+    font-size: 120px;
+    font-weight: light;
+    font-family: Helvetica, Arial, sans-serif;
+    box-shadow: #90cffc inset 0 -5px 0;
+}
+body{
+    background-color: #00253E;
+}
+input#display{
+    display: flex;
+    text-align: right;
+    height: 100%;
+    font-size: 80px;
+    border-radius: 20px;
+    width: 760px;
+    font-family: 'Jomhuria', cursive;
+    color: #008cf0;
+    background-color: #001021;
+    border: none;
+    outline: none;
+}
+div#botoes{
+    justify-content: center; 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 160px 160px 160px  160px;
+    grid-template-rows: 140px 140px 140px  140px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #001021;
+    margin: auto;
+}
+button#igual{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 140px;
+    grid-template-columns: 160px
+}
+.botao{
+    font-size: 50px;
+    border-radius: 20px;
+    color: #008cf0;
+    background-color: #001021;
+    border: none;
+    outline: none;
+    transition: background-color 1s ease, transform 0.5s ease;
+}
+.botao:hover{
+    background-color: #008cf0;
+    color: #001021;
+    cursor: pointer;
+}

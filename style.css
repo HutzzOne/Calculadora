@@ -1,68 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+body {
+  background-color: #00253E;
+  margin: 0;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  width: fit-content;
+  color: #008cf0;
+  text-align: left;
+  margin-top: 0;
+  font-size: clamp(2.5rem, 8vw, 6.25rem);
+  font-family: Helvetica, Arial, sans-serif;
+  box-shadow: #d9dcdd inset 0 -0.1125em 0;
+}
+
 .calculadora {
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  margin: 5px 0px;
-  margin-top: -220px;
-  margin-left: 38%;
-    
-}      
-h1{
-    width: fit-content;
-    color: #008cf0;
-    background-color: #00253E;
-    text-align: left;
-    margin-top: 0;
-    font-size: 120px;
-    font-weight: light;
-    font-family: Helvetica, Arial, sans-serif;
-    box-shadow: #90cffc inset 0 -5px 0;
+  width: 100%;
+  max-width: 45em; 
+  margin: 2em auto; 
 }
-body{
-    background-color: #00253E;
+
+input#display {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 5em;
+  border-radius: 0.25em; 
+  padding: 0.2em 0.5em;
+  font-family: 'Jomhuria', cursive;
+  color: #008cf0;
+  background-color: #001021;
+  border: none;
+  outline: none;
+  margin-bottom: 0.1em;
 }
-input#display{
-    display: flex;
-    text-align: right;
-    height: 100%;
-    font-size: 80px;
-    border-radius: 20px;
-    width: 760px;
-    font-family: 'Jomhuria', cursive;
-    color: #008cf0;
-    background-color: #001021;
-    border: none;
-    outline: none;
+
+div#botoes {
+  display: grid;
+  grid-gap: 0.625em; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: minmax(4em, auto);
+  padding: 2.5em; 
+  border-radius: 1.25em; 
+  background-color: #001021;
+  box-sizing: border-box;
 }
-div#botoes{
-    justify-content: center; 
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 160px 160px 160px  160px;
-    grid-template-rows: 140px 140px 140px  140px;
-    padding: 40px;
-    border-radius: 20px;
-    background-color: #001021;
-    margin: auto;
+
+.botao {
+  font-size: 3.125em; 
+  border-radius: 0.4em;
+  color: #008cf0;
+  background-color: #001021;
+  border: none;
+  outline: none;
+  transition: background-color 1s ease, transform 0.5s ease;
+  padding: 0.5em 0;
 }
-button#igual{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-rows: 140px;
-    grid-template-columns: 160px
+
+.botao:hover {
+  background-color: #008cf0;
+  color: #001021;
+  cursor: pointer;
 }
-.botao{
-    font-size: 50px;
-    border-radius: 20px;
-    color: #008cf0;
-    background-color: #001021;
-    border: none;
-    outline: none;
-    transition: background-color 1s ease, transform 0.5s ease;
-}
-.botao:hover{
-    background-color: #008cf0;
-    color: #001021;
-    cursor: pointer;
+
+button#igual {
+  width: 100%;
 }

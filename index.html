@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon/faviconCalculadora.png">
     <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <h1 id="titulo">Calculadora</h1>
     <div class="calculadora">
-    <input type="text" id="display" readonly>
-    <div id="botoes">
+        <input type="text" id="display" readonly>
+     <div id="botoes">
+        
         
         <button class="botao" onclick="inserirNumero('1')">1</button>
         <button class="botao" onclick="inserirNumero('2')">2</button>
@@ -32,7 +34,7 @@
         <button class="botao" onclick="inserirOperador('+')">+</button>
         <button id="igual" class="botao" onclick="calcular()">=</button>
         
-    </div>
+     </div>
     </div>
 </body>
 </html>

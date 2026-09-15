@@ -15,8 +15,9 @@ function limpar() {
 
 function calcular() {
     const display = document.getElementById('display');
+    let resultado = limparResultado(eval(display.value));
     try {
-        display.value = eval(display.value);
+        display.value = resultado;
     } catch (error) {
         display.value = 'Erro';
     }
@@ -25,3 +26,6 @@ function inserirDecimal() {
     const display = document.getElementById('display');
     display.value += '.';
 } 
+function limparResultado(numero) {
+  return Number(Math.round(numero + 'e12') + 'e-12');
+}
